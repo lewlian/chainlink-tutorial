@@ -15,14 +15,14 @@ contract Lottery is Ownable {
     enum LotteryState {Open, Closed, Finished}
 
     mapping(uint256 => EnumerableSet.AddressSet) entries;
-    uint256[] numbers;
+    uint256[] public numbers;
     LotteryState public state;
     uint256 public numberOfEntries;
     uint256 public entryFee;
     uint256 public ownerCut;
     uint256 public winningNumber;
-    address randomNumberGenerator;
-    bytes32 randomNumberRequestId;
+    address public randomNumberGenerator;
+    bytes32 public randomNumberRequestId;
 
     event LotteryStateChanged(LotteryState newState);
     event NewEntry(address player, uint256 number);

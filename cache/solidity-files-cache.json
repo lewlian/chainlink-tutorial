@@ -2,14 +2,14 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\Sean\\Desktop\\Ethereum\\chainlink-tutorial\\contracts\\Lottery.sol": {
-      "lastModificationDate": 1639578895267,
-      "contentHash": "2861762f6d5b45b1b702bc257bf74bc1",
+      "lastModificationDate": 1639581524146,
+      "contentHash": "c619fa910c9146a1cf3ff65593781f43",
       "sourceName": "contracts/Lottery.sol",
       "solcConfig": {
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {
@@ -50,7 +50,7 @@
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {
@@ -87,7 +87,7 @@
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {
@@ -122,7 +122,7 @@
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {
@@ -157,7 +157,7 @@
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {
@@ -185,14 +185,14 @@
       ]
     },
     "C:\\Users\\Sean\\Desktop\\Ethereum\\chainlink-tutorial\\contracts\\RandomNumberGenerator.sol": {
-      "lastModificationDate": 1639579118704,
-      "contentHash": "72931224aa550ace847262bf67b02149",
+      "lastModificationDate": 1639579165369,
+      "contentHash": "4d47adc3015fbe3766d484ebdbaed062",
       "sourceName": "contracts/RandomNumberGenerator.sol",
       "solcConfig": {
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {
@@ -230,7 +230,7 @@
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {
@@ -265,7 +265,7 @@
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {
@@ -303,7 +303,7 @@
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {
@@ -338,7 +338,7 @@
         "version": "0.8.6",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
           "outputSelection": {

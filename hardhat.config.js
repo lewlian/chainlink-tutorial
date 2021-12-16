@@ -3,6 +3,7 @@
  */
 require("@nomiclabs/hardhat-waffle");
 require("dotenv").config();
+require("@nomiclabs/hardhat-etherscan");
 
 module.exports = {
   defaultNetwork: "hardhat",
@@ -21,5 +22,10 @@ module.exports = {
         runs: 200,
       },
     },
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://etherscan.io/
+    apiKey: process.env.ETHERSCAN_API_KEY,
   },
 };

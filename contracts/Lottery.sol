@@ -66,7 +66,7 @@ contract Lottery is Ownable {
 
     function drawNumber() public onlyOwner isState(LotteryState.Open) {
         _changeState(LotteryState.Closed);
-        randomNumberRequestId = RandomNumberGenerator(randomNumberGenerator).request();
+        randomNumberRequestId = RandomNumberGenerator(randomNumberGenerator).request(); // Request a random number from RNG Contract 
         emit NumberRequested(randomNumberRequestId);
     }
 
@@ -75,7 +75,7 @@ contract Lottery is Ownable {
     }
     
     function numberDrawn(bytes32 _randomNumberRequestId, uint _randomNumber) public onlyRandomGenerator isState(LotteryState.Closed) {
-		if (_randomNumberRequestId == randomNumberRequestId) {
+		if (_randomNumberRequestId == randomNumberRequestId) { // make sure that the requestId coming back is the correct one
 			winningNumber = _randomNumber;
 			emit NumberDrawn(_randomNumberRequestId, _randomNumber);
 			_payout(entries[_randomNumber]);

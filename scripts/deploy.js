@@ -13,7 +13,7 @@ async function main() {
 
   // ===== Lottery Deployment ====== //
   const Lottery = await ethers.getContractFactory("Lottery");
-  console.log("Deploying RNG Contract...");
+  console.log("Deploying Lottery Contract...");
   const lottery = await Lottery.deploy(entryFee, ownerCut, rngContract.address);
   await lottery.deployed();
   console.log("lottery Contract deployed to: ", lottery.address);

@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\Sean\\Desktop\\Ethereum\\chainlink-tutorial\\contracts\\Lottery.sol": {
-      "lastModificationDate": 1639581524146,
-      "contentHash": "c619fa910c9146a1cf3ff65593781f43",
+      "lastModificationDate": 1639632119444,
+      "contentHash": "c85fc80ee73d3dd222f5fe4a485dbe45",
       "sourceName": "contracts/Lottery.sol",
       "solcConfig": {
         "version": "0.8.6",
@@ -185,8 +185,8 @@
       ]
     },
     "C:\\Users\\Sean\\Desktop\\Ethereum\\chainlink-tutorial\\contracts\\RandomNumberGenerator.sol": {
-      "lastModificationDate": 1639579165369,
-      "contentHash": "4d47adc3015fbe3766d484ebdbaed062",
+      "lastModificationDate": 1639632044570,
+      "contentHash": "ee9b67d48724a7a7e7a7cc85273e4d3d",
       "sourceName": "contracts/RandomNumberGenerator.sol",
       "solcConfig": {
         "version": "0.8.6",

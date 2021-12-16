@@ -32,7 +32,7 @@ contract RandomNumberGenerator is VRFConsumerBase {
     /// @param _requestId Unique request identifier
     /// @param _randomness Verifiable random number
     function fulfillRandomness(bytes32 _requestId, uint256 _randomness) internal override {
-        Lottery(requester).numberDrawn(_requestId, _randomness);
+        Lottery(requester).numberDrawn(_requestId, _randomness); // when randomness is fulfilled we will call numberDrawn from the lottery contract
     }
     
     /// @dev Requests a new verifiable random number
@@ -40,8 +40,8 @@ contract RandomNumberGenerator is VRFConsumerBase {
     /// @param requestId Returns the unique requested random number identifier
     function request() public returns(bytes32 requestId) {
         require(keyHash != bytes32(0), "Must have valid key hash");
-        requester = msg.sender;
-        return requestRandomness(keyHash, fee);
+        requester = msg.sender; // set the address of the requester which in this case is the Lottery contract address
+        return requestRandomness(keyHash, fee);  // makes the initial request for randomness, this will call fulfillRandomness when it is done
     }
 }
 
